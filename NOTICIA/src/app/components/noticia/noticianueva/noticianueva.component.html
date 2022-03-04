@@ -1,0 +1,29 @@
+<form  >
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="titulo" type="text" [(ngModel)]="item.titulo" class="form-control" id="tituloInput" placeholder="Titulo">
+            <label for="tituloInput">Titulo</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="noticia" type="text" [(ngModel)]="item.noticia" class="form-control" id="noticiaInput" placeholder="Noticia">
+            <label for="noticiaInput">Noticia</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="fecha" type="text" [(ngModel)]="item.fecha" class="form-control" id="fechaInput" placeholder="Fecha">
+            <label for="fechaInput">Fecha</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="autor" type="text" [(ngModel)]="item.autor" class="form-control" id="autorInput" placeholder="Autor">
+            <label for="autorInput">Autor</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="categoriar" type="text" [(ngModel)]="item.categoria" class="form-control" id="categoriaInput" placeholder="Categoria">
+            <label for="categoriaInput">Categoria</label>
+        </div>
+      
+        
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>
